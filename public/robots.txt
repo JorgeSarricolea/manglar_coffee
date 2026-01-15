@@ -1,0 +1,23 @@
+# Robots.txt for Manglar Coffee
+# https://manglarcoffee.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://manglarcoffee.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block access to development/build files
+Disallow: /src/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Allow important resources
+Allow: /imgs/
+Allow: /logos/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
