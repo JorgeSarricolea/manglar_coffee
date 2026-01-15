@@ -44,6 +44,10 @@
   width: auto;
 }
 
+#main-navigation {
+  order: 2;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -70,6 +74,8 @@
   cursor: pointer;
   padding: 0.5rem;
   z-index: 1001;
+  order: 3; /* Push to the right in mobile */
+  margin-left: auto;
 }
 
 .hamburger {
@@ -758,6 +764,11 @@
 /* Responsive */
 @media (max-width: 768px) {
   /* Mobile Navigation */
+  #main-navigation {
+    position: static;
+    flex: 0;
+  }
+
   .nav-toggle {
     display: block;
   }
