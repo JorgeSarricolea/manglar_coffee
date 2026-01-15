@@ -1,0 +1,65 @@
+:root {
+  /* Elegant Color Palette - Manglar Coffee */
+  
+  /* Dark tones */
+  --color-noir: #1c1714;
+  --color-espresso: #2a2320;
+  --color-coffee: #3d3632;
+  
+  /* Mid tones */
+  --color-mocha: #5c524a;
+  --color-walnut: #8b7d72;
+  
+  /* Light tones */
+  --color-latte: #c4b5a6;
+  --color-cream: #e8e2dc;
+  --color-ivory: #f7f5f2;
+  
+  /* Accent colors */
+  --color-caramel: #b8956c;
+  --color-bronze: #a08060;
+  
+  /* Text colors */
+  --color-text: #2a2320;
+  --color-text-muted: #6b6058;
+  --color-text-light: #9a918a;
+  
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lora', Georgia, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-ivory);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
