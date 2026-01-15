@@ -27,15 +27,15 @@ function App() {
               <span className="item-name" itemProp="name">{item.name}</span>
               {section.type === 'sizes' && (
                 <>
-                  <span className={item.ch === 'NA' ? 'na' : ''} itemProp="offers" itemScope itemType="https://schema.org/Offer">{item.ch}</span>
-                  <span className={item.med === 'NA' ? 'na' : ''}>{item.med}</span>
-                  <span className={item.gde === 'NA' ? 'na' : ''}>{item.gde}</span>
+                  <span className={!item.ch ? 'empty' : ''} itemProp="offers" itemScope itemType="https://schema.org/Offer">{item.ch || '—'}</span>
+                  <span className={!item.med ? 'empty' : ''}>{item.med || '—'}</span>
+                  <span className={!item.gde ? 'empty' : ''}>{item.gde || '—'}</span>
                 </>
               )}
               {section.type === 'dual' && (
                 <>
-                  <span className={item.med === 'NA' ? 'na' : ''}>{item.med}</span>
-                  <span className={item.gde === 'NA' ? 'na' : ''}>{item.gde}</span>
+                  <span className={!item.med ? 'empty' : ''}>{item.med || '—'}</span>
+                  <span className={!item.gde ? 'empty' : ''}>{item.gde || '—'}</span>
                 </>
               )}
               {section.type === 'simple' && (

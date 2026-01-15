@@ -5,13 +5,14 @@
     "type": "sizes",
     "sizes": ["CH", "MED", "GDE"],
     "items": [
-      { "name": "Espresso", "ch": "$40", "med": "$55", "gde": "NA" },
+      { "name": "Espresso", "ch": "$40", "med": "", "gde": "" },
+      { "name": "Espresso Doble", "ch": "$55", "med": "", "gde": "" },
       { "name": "Americano", "ch": "$45", "med": "$55", "gde": "$65" },
       { "name": "Capuccino", "ch": "$70", "med": "$80", "gde": "$90" },
       { "name": "Latte", "ch": "$70", "med": "$80", "gde": "$90" },
       { "name": "Mocha", "ch": "$75", "med": "$85", "gde": "$95" },
-      { "name": "Flat White", "ch": "$55", "med": "NA", "gde": "NA" },
-      { "name": "Café del día", "ch": "NA", "med": "$40", "gde": "NA" },
+      { "name": "Flat White", "ch": "$55", "med": "", "gde": "" },
+      { "name": "Café del día", "ch": "", "med": "$40", "gde": "" },
       { "name": "Caramel Latte", "ch": "$75", "med": "$85", "gde": "$95" }
     ]
   },
@@ -49,7 +50,7 @@
     "sizes": ["MED", "GDE"],
     "items": [
       { "name": "Nochebuena Latte", "med": "$70", "gde": "$85" },
-      { "name": "Ice Nochebuena Latte", "med": "NA", "gde": "$95" },
+      { "name": "Ice Nochebuena Latte", "med": "", "gde": "$95" },
       { "name": "Último paseo Latte", "med": "$75", "gde": "$85" }
     ]
   },

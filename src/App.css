@@ -526,9 +526,9 @@
   letter-spacing: 0.3px;
 }
 
-.table-row span.na {
-  color: rgba(196, 181, 166, 0.25);
-  font-size: 0.8rem;
+.table-row span.empty {
+  color: rgba(196, 181, 166, 0.2);
+  font-size: 0.75rem;
 }
 
 .table-row span:not(.item-name):not(.na) {
