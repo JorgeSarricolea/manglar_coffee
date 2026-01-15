@@ -4,17 +4,22 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://manglarcoffee.com/</loc>
+    <loc>https://manglarcoffee.netlify.app/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://manglarcoffee.com/logos/manglar_coffee_logo.jpeg</image:loc>
+      <image:loc>https://manglarcoffee.netlify.app/imgs/Screenshot%202026-01-15%20at%2016.55.43.png</image:loc>
+      <image:title>Latte Art Manglar Coffee</image:title>
+      <image:caption>Arte latte profesional con diseño de hoja en Manglar Coffee Ciudad del Carmen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://manglarcoffee.netlify.app/logos/manglar_coffee_logo.jpeg</image:loc>
       <image:title>Manglar Coffee Logo</image:title>
       <image:caption>Logo oficial de Manglar Coffee - Cafetería de especialidad en Ciudad del Carmen</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://manglarcoffee.com/imgs/2025-11-16.webp</image:loc>
+      <image:loc>https://manglarcoffee.netlify.app/imgs/2025-11-16.webp</image:loc>
       <image:title>Interior Manglar Coffee</image:title>
       <image:caption>Interior acogedor de Manglar Coffee en Ciudad del Carmen</image:caption>
     </image:image>
@@ -22,7 +27,7 @@
   
   <!-- Menu Section -->
   <url>
-    <loc>https://manglarcoffee.com/#menu</loc>
+    <loc>https://manglarcoffee.netlify.app/#menu</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +35,7 @@
   
   <!-- About Section -->
   <url>
-    <loc>https://manglarcoffee.com/#about</loc>
+    <loc>https://manglarcoffee.netlify.app/#about</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -38,15 +43,10 @@
   
   <!-- Contact Section -->
   <url>
-    <loc>https://manglarcoffee.com/#contact</loc>
+    <loc>https://manglarcoffee.netlify.app/#contact</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://manglarcoffee.com/imgs/Screenshot%202026-01-15%20at%2016.55.43.png</image:loc>
-      <image:title>Latte Art Manglar Coffee</image:title>
-      <image:caption>Arte latte profesional en Manglar Coffee</image:caption>
-    </image:image>
   </url>
   
 </urlset>

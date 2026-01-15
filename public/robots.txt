@@ -1,11 +1,11 @@
 # Robots.txt for Manglar Coffee
-# https://manglarcoffee.com
+# https://manglarcoffee.netlify.app
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://manglarcoffee.com/sitemap.xml
+Sitemap: https://manglarcoffee.netlify.app/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
