@@ -1,4 +1,24 @@
-/* Navbar */
+/* Skip Link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-caramel);
+  color: var(--color-noir);
+  padding: 8px 16px;
+  z-index: 10000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--color-cream);
+  outline-offset: 2px;
+}
+
+/* Navbar / Header */
 .navbar {
   position: fixed;
   top: 0;
@@ -295,6 +315,7 @@
   opacity: 0.8;
 }
 
+.feature h2,
 .feature h3 {
   color: var(--color-espresso);
   margin-bottom: 1rem;
