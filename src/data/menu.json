@@ -1,0 +1,67 @@
+{
+  "hotDrinks": {
+    "visible": true,
+    "title": "☕ Bebidas Calientes",
+    "type": "sizes",
+    "sizes": ["CH", "MED", "GDE"],
+    "items": [
+      { "name": "Espresso", "ch": "$40", "med": "$55", "gde": "NA" },
+      { "name": "Americano", "ch": "$45", "med": "$55", "gde": "$65" },
+      { "name": "Capuccino", "ch": "$70", "med": "$80", "gde": "$90" },
+      { "name": "Latte", "ch": "$70", "med": "$80", "gde": "$90" },
+      { "name": "Mocha", "ch": "$75", "med": "$85", "gde": "$95" },
+      { "name": "Flat White", "ch": "$55", "med": "NA", "gde": "NA" },
+      { "name": "Café del día", "ch": "NA", "med": "$40", "gde": "NA" },
+      { "name": "Caramel Latte", "ch": "$75", "med": "$85", "gde": "$95" }
+    ]
+  },
+  "coldDrinks": {
+    "visible": true,
+    "title": "🧊 Bebidas Frías",
+    "type": "simple",
+    "sizes": ["GDE"],
+    "items": [
+      { "name": "Bahamita Beach", "price": "$90" },
+      { "name": "Tiramisú Latte", "price": "$90" },
+      { "name": "Caramel Latte", "price": "$90" },
+      { "name": "Ice Chai", "price": "$90" },
+      { "name": "Ice Matcha", "price": "$90" },
+      { "name": "Latte", "price": "$90" }
+    ]
+  },
+  "nonCoffee": {
+    "visible": true,
+    "title": "🍵 Selección Sin Café",
+    "type": "dual",
+    "sizes": ["MED", "GDE"],
+    "items": [
+      { "name": "Tisana", "med": "$70", "gde": "$85" },
+      { "name": "Té Verde", "med": "$70", "gde": "$85" },
+      { "name": "Té Negro", "med": "$70", "gde": "$85" },
+      { "name": "Chai Latte", "med": "$80", "gde": "$85" },
+      { "name": "Matcha Latte", "med": "$80", "gde": "$85" }
+    ]
+  },
+  "seasonal": {
+    "visible": true,
+    "title": "🎄 Bebidas de Temporada",
+    "type": "dual",
+    "sizes": ["MED", "GDE"],
+    "items": [
+      { "name": "Nochebuena Latte", "med": "$70", "gde": "$85" },
+      { "name": "Ice Nochebuena Latte", "med": "NA", "gde": "$95" },
+      { "name": "Último paseo Latte", "med": "$75", "gde": "$85" }
+    ]
+  },
+  "desserts": {
+    "visible": true,
+    "title": "🍰 Postres",
+    "type": "simple",
+    "sizes": ["Precio"],
+    "items": [
+      { "name": "Tarta Gourmet", "price": "$40" },
+      { "name": "Brownie Avellana", "price": "$40" },
+      { "name": "Soufflé de elote", "price": "$50" }
+    ]
+  }
+}
