@@ -321,9 +321,15 @@ main {
 
 .feature-icon {
   font-size: 2rem;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 1.5rem;
   opacity: 0.8;
+  color: var(--color-caramel);
+}
+
+.feature-icon svg {
+  font-size: 2.5rem;
 }
 
 .feature h2,
@@ -459,6 +465,18 @@ main {
   border-bottom: 1px solid rgba(196, 181, 166, 0.15);
   letter-spacing: 1px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.category-icon {
+  display: flex;
+  color: var(--color-caramel);
+}
+
+.category-icon svg {
+  font-size: 1.25rem;
 }
 
 .menu-table {
@@ -669,9 +687,13 @@ main {
 
 .contact-icon {
   font-size: 1.25rem;
-  display: block;
+  display: flex;
   margin-bottom: 1rem;
-  opacity: 0.6;
+  color: var(--color-caramel);
+}
+
+.contact-icon svg {
+  font-size: 1.5rem;
 }
 
 .contact-card h3 {
@@ -749,11 +771,18 @@ main {
 .footer-social a {
   font-size: 1.25rem;
   opacity: 0.6;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  color: var(--color-latte);
+  display: flex;
 }
 
 .footer-social a:hover {
   opacity: 1;
+  color: var(--color-caramel);
+}
+
+.footer-social svg {
+  font-size: 1.5rem;
 }
 
 .footer-bottom {

@@ -3,6 +3,28 @@ import { motion } from 'framer-motion'
 import './App.css'
 import menuData from './data/menu.json'
 
+// MUI Icons
+import SpaIcon from '@mui/icons-material/Spa'
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import ScheduleIcon from '@mui/icons-material/Schedule'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import CoffeeIcon from '@mui/icons-material/Coffee'
+import AcUnitIcon from '@mui/icons-material/AcUnit'
+import EmojiFoodBeverageIcon from '@mui/icons-material/EmojiFoodBeverage'
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'
+import CakeIcon from '@mui/icons-material/Cake'
+
+// Menu icon mapping
+const menuIcons = {
+  coffee: <CoffeeIcon />,
+  cold: <AcUnitIcon />,
+  tea: <EmojiFoodBeverageIcon />,
+  seasonal: <AutoAwesomeIcon />,
+  dessert: <CakeIcon />
+}
+
 // Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -80,7 +102,10 @@ function App() {
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
       >
-        <h3 className="category-title" itemProp="name">{section.title}</h3>
+        <h3 className="category-title" itemProp="name">
+          {section.icon && menuIcons[section.icon] && <span className="category-icon">{menuIcons[section.icon]}</span>}
+          {section.title}
+        </h3>
         <div className={`menu-table ${section.type}`}>
           <div className={`table-header ${section.type}`} role="row">
             <span></span>
@@ -239,9 +264,9 @@ function App() {
           viewport={{ once: true, margin: "-100px" }}
         >
           {[
-            { icon: '🌱', title: 'Origen Único', desc: 'Granos seleccionados de las mejores fincas de Chiapas y Oaxaca' },
-            { icon: '🔥', title: 'Tostado Artesanal', desc: 'Tostamos en pequeños lotes para garantizar frescura' },
-            { icon: '❤️', title: 'Hecho con Amor', desc: 'Cada bebida preparada con dedicación y pasión' }
+            { icon: <SpaIcon />, title: 'Origen Único', desc: 'Granos seleccionados de las mejores fincas de Chiapas y Oaxaca' },
+            { icon: <LocalFireDepartmentIcon />, title: 'Tostado Artesanal', desc: 'Tostamos en pequeños lotes para garantizar frescura' },
+            { icon: <FavoriteIcon />, title: 'Hecho con Amor', desc: 'Cada bebida preparada con dedicación y pasión' }
           ].map((feature, i) => (
             <motion.article 
               key={i} 
@@ -405,7 +430,7 @@ function App() {
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >
-                <span className="contact-icon" aria-hidden="true">📍</span>
+                <span className="contact-icon" aria-hidden="true"><LocationOnIcon /></span>
                 <h3>Ubicación</h3>
                 <p>
                   <span itemProp="streetAddress">Calle 25 #54</span><br />
@@ -418,7 +443,7 @@ function App() {
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >
-                <span className="contact-icon" aria-hidden="true">🕐</span>
+                <span className="contact-icon" aria-hidden="true"><ScheduleIcon /></span>
                 <h3>Horario</h3>
                 <p>
                   <time itemProp="openingHours" dateTime="Mo-Sa 07:00-14:00">Lunes a Sábado<br />7:00 - 14:00 hrs</time><br />
@@ -430,7 +455,7 @@ function App() {
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >
-                <span className="contact-icon" aria-hidden="true">📱</span>
+                <span className="contact-icon" aria-hidden="true"><InstagramIcon /></span>
                 <h3>Síguenos</h3>
                 <p>
                   Instagram<br />
@@ -504,7 +529,7 @@ function App() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.95 }}
             >
-              📷
+              <InstagramIcon />
             </motion.a>
           </div>
         </div>

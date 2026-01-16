@@ -1,7 +1,8 @@
 {
   "hotDrinks": {
     "visible": true,
-    "title": "☕ Bebidas Calientes",
+    "title": "Bebidas Calientes",
+    "icon": "coffee",
     "type": "sizes",
     "sizes": ["CH", "MED", "GDE"],
     "items": [
@@ -18,7 +19,8 @@
   },
   "coldDrinks": {
     "visible": true,
-    "title": "🧊 Bebidas Frías",
+    "title": "Bebidas Frías",
+    "icon": "cold",
     "type": "simple",
     "sizes": ["GDE"],
     "items": [
@@ -32,7 +34,8 @@
   },
   "nonCoffee": {
     "visible": true,
-    "title": "🍵 Selección Sin Café",
+    "title": "Selección Sin Café",
+    "icon": "tea",
     "type": "dual",
     "sizes": ["MED", "GDE"],
     "items": [
@@ -45,7 +48,8 @@
   },
   "seasonal": {
     "visible": true,
-    "title": "🎄 Bebidas de Temporada",
+    "title": "Bebidas de Temporada",
+    "icon": "seasonal",
     "type": "dual",
     "sizes": ["MED", "GDE"],
     "items": [
@@ -56,7 +60,8 @@
   },
   "desserts": {
     "visible": true,
-    "title": "🍰 Postres",
+    "title": "Postres",
+    "icon": "dessert",
     "type": "simple",
     "sizes": ["Precio"],
     "items": [
