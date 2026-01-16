@@ -785,6 +785,8 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100vw;
+    height: 100vh;
     background: var(--color-noir);
     flex-direction: column;
     justify-content: center;
@@ -793,11 +795,16 @@ main {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 999;
   }
 
   .nav-links.active {
     opacity: 1;
     visibility: visible;
+  }
+
+  .nav-toggle {
+    z-index: 1001;
   }
 
   .nav-links li {
