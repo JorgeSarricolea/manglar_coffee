@@ -1,3 +1,8 @@
+/* Global overflow fix */
+main {
+  overflow-x: hidden;
+}
+
 /* Skip Link for Accessibility */
 .skip-link {
   position: absolute;
@@ -544,6 +549,7 @@
   padding: 7rem 8%;
   background: var(--color-cream);
   align-items: center;
+  overflow: hidden;
 }
 
 .about-content .section-tag {
